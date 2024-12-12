@@ -53,3 +53,7 @@ Firestore brukes som backend og har følgende struktur:
 ## Universell utforming og Google Fonts
 - Prosjektet bruker skrifttyper fra Google Fonts for bedre lesbarhet.
 - Implementeringen følger retningslinjer for universell utforming for å sikre at nettsiden er tilgjengelig for alle brukere.
+
+## Problemer
+- **Admin** Adminsiden pleide å fungere helt fint, men etter noen forsøkte fikser funket det ikke å legge til retter lenger. Jeg prøvde å fikse det lenge, men jeg fikk det rett og slett ikke til. 
+- **Menyer** I hovedmenyene funker det ikke at retter fra adminsiden legges til i menyen. Dette har jeg aldri fått til å funke, uansett hvor mye jeg har prøvd. Å løse detter er også grunnen til at adminsiden ble ødelagt. 
