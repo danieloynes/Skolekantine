@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - Skolekantine</title>
+        
+        <!-- Firebase SDK -->
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+        
+        <script type="module" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Admin Meny</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="index.html">Mat</a></li>
+                <li><a href="drinks.html">Drikke</a></li>
+                <li><a href="snacks.html">Snop</a></li>
+                <li><button id="logout">Logg ut</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Endre Matretter</h2>
+        <form id="menu-form">
+            <input type="text" id="menu-item" placeholder="Ny vare" required>
+            <input type="text" id="item-price" placeholder="Pris i kroner" required>
+            <select id="item-category" required>
+                <option value="" disabled selected>Velg kategori</option>
+                <option value="mat">Mat</option>
+                <option value="drikke">Drikke</option>
+                <option value="snacks">Snop</option>
+            </select>
+            <input type="file" id="item-image" accept="image/*">
+            <button type="submit">Legg til vare</button>
+        </form>
+        <div id="current-menu"></div>
+    </main>
+</body>
+</html>

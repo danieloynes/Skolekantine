@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skolekantine</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js"></script>
+</head>
+<body>
+    <form id="login-form">
+        <input type="email" id="email" placeholder="E-post" required>
+        <input type="password" id="password" placeholder="Passord" required>
+        <button type="submit">Logg inn</button>
+    </form>
+    <div id="error-message" style="color: red;"></div>
+</body>
+</html>
